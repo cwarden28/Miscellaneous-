@@ -31,7 +31,6 @@ def duplicate_checker(directory, name):
             tracker[file] = 0
             tracker[file] += 1
         else:
-            #print('Duplicate: {}'.format(file))
             tracker[file] += 1
     w = csv.writer(open("{}.csv".format(name), "w", encoding="utf-8"))
     for key, val in tracker.items():
